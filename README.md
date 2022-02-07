@@ -14,12 +14,23 @@ Click on the menu icon next to README.md for a list of sections
 * Python >=3.5.3
 * discord.py
 * dotenv
+* requests
 
 ## Setup
 
 ```sh
+# Create new virtual enviornment
+python3 -m venv /path/to/new/venv
+# Load the virtual enviornment
+source /path/to/new/venv
+# Install dependencies
+python -m pip install discord.py python-dotenv requests
+
+# Download the source code
 git clone https://github.com/mtothem1337/thetallbot
+# Change into the source code directory
 cd thetallbot
+# Run the bot
 ./main.py
 ```
 
