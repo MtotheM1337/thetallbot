@@ -3,7 +3,7 @@ import os
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
-from cogs import Dice
+from cogs import Dice, Chuck
 
 def main():
     # Exits early if the API key were not provided, as it's mandatory.
@@ -27,6 +27,7 @@ def main():
 
     # Loads the cogs.
     bot.add_cog(Dice(bot))
+    bot.add_cog(Chuck(bot))
 
     # Starts the bot.
     bot.run(api_token)
