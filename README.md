@@ -22,7 +22,7 @@ Click on the menu icon next to README.md for a list of sections
 # Create new virtual enviornment
 python3 -m venv /path/to/new/venv
 # Load the virtual enviornment
-source /path/to/new/venv
+source /path/to/new/venv/bin/activate
 # Install dependencies
 python -m pip install discord.py python-dotenv requests
 
