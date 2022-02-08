@@ -3,4 +3,6 @@ services:
     image: "thetallbot"
     ports:
       - "3000:3000"
+    env_file:
+      - .env
 
