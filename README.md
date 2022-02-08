@@ -24,7 +24,7 @@ python3 -m venv /path/to/new/venv
 # Load the virtual enviornment
 source /path/to/new/venv/bin/activate
 # Install dependencies
-python -m pip install discord.py python-dotenv requests
+python -m pip install -r requirements.txt
 
 # Download the source code
 git clone https://github.com/mtothem1337/thetallbot
