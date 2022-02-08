@@ -13,10 +13,16 @@ Click on the menu icon next to README.md for a list of sections
 
 * Python >=3.5.3
 * discord.py
-* dotenv
 * requests
 
 ## Setup
+
+```
+git clone https://github.com/mtothem1337/thetallbot
+cd thetallbot
+```
+
+### Manual
 
 ```sh
 # Create new virtual enviornment
@@ -25,25 +31,29 @@ python3 -m venv /path/to/new/venv
 source /path/to/new/venv/bin/activate
 # Install dependencies
 python -m pip install -r requirements.txt
-
-# Download the source code
-git clone https://github.com/mtothem1337/thetallbot
-# Change into the source code directory
-cd thetallbot
 # Run the bot
 ./main.py
 ```
 
+## Docker
+
+### Building an image
+
+```
+docker build -t thetallbot .
+```
+
+### Running an image
+
+#### Docker Compose
+
+```
+docker-compose up -d
+```
+
 ### API Key
 
-Since keeping secrets in source code is unsafe, especilly in regards to version control systems such as git. We will store the key in a `.env` file not managed by git.
-
-It is important to note that secrets should never be world readable either, as any user on the system can then read the key for themselves. Only the bot user should be allowed to read it's contents.
-
-```sh
-# .env
-TTB_TOKEN='api-key'
-```
+API key will be loaded from the $TTB_TOKEN env variable, or .env when building an image.
 
 ## Design
 
