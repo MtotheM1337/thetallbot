@@ -32,7 +32,7 @@ source /path/to/new/venv/bin/activate
 # Install dependencies
 python -m pip install -r requirements.txt
 # Run the bot
-./main.py
+./src/main.py
 ```
 
 ## Docker
