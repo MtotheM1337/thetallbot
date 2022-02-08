@@ -2,12 +2,10 @@
 import os
 import discord
 from discord.ext import commands
-from dotenv import load_dotenv
 from cogs import Dice, Chuck
 
 def main():
     # Exits early if the API key were not provided, as it's mandatory.
-    load_dotenv()
     api_token = os.getenv('TTB_TOKEN')
     if not api_token:
         print("[FATAL]: TTB_TOKEN is missing.")
