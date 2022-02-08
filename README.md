@@ -45,6 +45,12 @@ docker build -t thetallbot .
 
 ### Running an image
 
+#### CLI
+
+```
+docker run -d -p 3000:3000 --env-file=.env thetallbot
+```
+
 #### Docker Compose
 
 ```
