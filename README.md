@@ -53,7 +53,7 @@ docker-compose up -d
 
 ### API Key
 
-API key will be loaded from the $TTB_TOKEN env variable, or .env when building an image.
+API key will be loaded from the `$TTB_TOKEN` env variable, or `.env` when using docker-compose.
 
 ## Design
 
